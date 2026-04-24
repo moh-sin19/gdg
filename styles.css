@@ -1,7 +1,7 @@
 @font-face {
   font-family: "NonCursive";
   src: url("./non-cursive.otf") format("opentype");
-  font-display: swap;
+  font-display: swap; 
 }
 
 @font-face {
@@ -155,6 +155,7 @@ body {
 
 .home-branding {
   margin-top: clamp(3.5rem, 10vw, 9rem);
+  width: 100%;
 }
 
 .xoxo {
@@ -162,14 +163,17 @@ body {
   color: var(--brand-blue);
   font-family: "Mono", monospace;
   opacity: 1;
-  font-size: clamp(3.6rem, 18vw, 14rem);
+  font-size: clamp(4.6rem, 24vw, 18rem);
   line-height: 0.9;
+  margin-left: clamp(0.1rem, 0.8vw, 0.8rem);
 }
 
 .signature-wrap {
   margin-top: clamp(-0.2rem, 1.6vw, 1.2rem);
-  margin-left: clamp(4rem, 24vw, 15rem);
-  display: inline-flex;
+  margin-left: auto;
+  margin-right: clamp(0.15rem, 1vw, 0.8rem);
+  width: fit-content;
+  display: flex;
   align-items: flex-end;
   gap: clamp(0.35rem, 1vw, 0.8rem);
 }
@@ -265,6 +269,6 @@ body {
 
 @media (max-width: 700px) {
   .signature-wrap {
-    margin-left: clamp(2rem, 26vw, 7rem);
+    margin-right: clamp(0.1rem, 1.2vw, 0.5rem);
   }
 }
