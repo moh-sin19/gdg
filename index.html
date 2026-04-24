@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gossip UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="landing-page" class="screen landing">
+        <div class="landing-content">
+          <p class="line non-cursive spotlight-target">hey upper east siders...</p>
+
+          <p class="line mixed spotlight-target">
+            <span class="cursive">gossip girl here</span>
+            <span class="non-cursive"> – and i have</span>
+          </p>
+
+          <div class="news-row spotlight-target">
+            <p class="line non-cursive">the biggest news ever</p>
+            <a class="mail-link landing-mail" href="#home-screen" aria-label="Open home screen">
+              <img src="mail.png" alt="Envelope" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="home-screen" class="screen home">
+        <nav class="navbar" aria-label="Main Navigation">
+          <a class="nav-pill home-pill" href="#landing-page">home</a>
+          <a class="nav-pill tea-pill" href="#tea-page">tea</a>
+          <a class="nav-pill about-pill" href="#about-page">about</a>
+        </nav>
+
+        <div class="home-branding">
+          <h1 class="xoxo">XOXO</h1>
+          <div class="signature-wrap">
+            <a class="mail-link home-mail" href="#tea-page" aria-label="Go to tea page">
+              <img src="mail.png" alt="Envelope" />
+            </a>
+            <p class="signature">gossip<br />girl</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tea-page" class="screen tea">
+        <div class="placeholder">
+          <p>Tea page placeholder</p>
+        </div>
+      </section>
+
+      <section id="about-page" class="screen about">
+        <nav class="navbar" aria-label="Main Navigation">
+          <a class="nav-pill home-pill" href="#landing-page">home</a>
+          <a class="nav-pill tea-pill" href="#tea-page">tea</a>
+          <a class="nav-pill about-pill" href="#about-page">about</a>
+        </nav>
+
+        <div class="about-content">
+          <div class="about-phone-wrap">
+            <img class="about-phone" src="nokia.jpg" alt="Phone" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
